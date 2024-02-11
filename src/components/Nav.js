@@ -37,7 +37,7 @@ const Nav = () => {
           <button className="register">Register</button>
         </div>
       </div>
-      <NavMenu />
+      {menu && <NavMenu />}
     </header>
   );
 };

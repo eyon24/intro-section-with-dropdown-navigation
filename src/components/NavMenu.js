@@ -1,6 +1,10 @@
 import { useState } from "react";
 import ArrowDown from "../images/icon-arrow-down.svg";
 import ArrowUp from "../images/icon-arrow-up.svg";
+import TodoIcon from "../images/icon-todo.svg";
+import CalenderIcon from "../images/icon-calendar.svg";
+import ReminderIcon from "../images/icon-reminders.svg";
+import PlanningIcon from "../images/icon-planning.svg";
 
 const NavMenu = () => {
   const [features, setFeatures] = useState(false);
@@ -25,26 +29,31 @@ const NavMenu = () => {
               src={features ? ArrowUp : ArrowDown}
               alt=""
             />
-            {features && (
-              <ul>
-                <li>Todo List</li>
-                <li>Calender</li>
-                <li>Reminders</li>
-                <li>Planning</li>
-              </ul>
-            )}
           </span>
+          <ul className={features ? "features" : "hide"}>
+            <li>
+              <img src={TodoIcon} alt="" /> Todo List
+            </li>
+            <li>
+              <img src={CalenderIcon} alt="" /> Calender
+            </li>
+            <li>
+              <img src={ReminderIcon} alt="" /> Reminders
+            </li>
+            <li>
+              <img src={PlanningIcon} alt="" /> Planning
+            </li>
+          </ul>
+
           <span className="link" onClick={toggleCompany}>
             Company
             <img className="arrow" src={company ? ArrowUp : ArrowDown} alt="" />
           </span>
-          {company && (
-            <ul>
-              <li>History</li>
-              <li>Our Team</li>
-              <li>Blog</li>
-            </ul>
-          )}
+          <ul className={company ? "company" : "hide"}>
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
           <span className="link">Careers</span>
           <span className="link">About</span>
         </div>

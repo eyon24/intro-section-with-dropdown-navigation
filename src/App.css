@@ -81,6 +81,35 @@
   background-color: rgba(0, 0, 0, 0.501);
 }
 
+.features,
+.company {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.features li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}
+
+.features li,
+.company li {
+  color: var(--med-gray);
+}
+
+.hide {
+  display: none;
+}
+
+.heroImg {
+  width: 100%;
+}
+
 @media only screen and (min-width: 1200px) {
   .nav {
     padding: 1.5rem 3rem;
