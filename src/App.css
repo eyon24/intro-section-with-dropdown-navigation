@@ -18,7 +18,7 @@
 .menu-container {
   position: absolute;
   right: 0;
-  background-color: #ffffff;
+  background-color: var(--almost-white);
   position: absolute;
   width: 65%;
   height: 100vh;
@@ -43,7 +43,7 @@
   border-radius: 1rem;
   font-size: inherit;
   color: var(--med-gray);
-  background-color: #ffffff;
+  background-color: var(--almost-white);
   border: 1px solid black;
 }
 
@@ -78,7 +78,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.501);
+  background-color: var(--almost-black);
 }
 
 .features,
@@ -108,6 +108,42 @@
 
 .heroImg {
   width: 100%;
+}
+
+.content-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.content-container h1 {
+  font-size: 34px;
+  margin-top: 30px;
+}
+
+.content-container p {
+  font-size: 16px;
+  margin-top: 30px;
+  color: var(--med-gray);
+  line-height: 1.5;
+}
+
+.content-container button {
+  margin-top: 30px;
+  font-size: 16px;
+  border: none;
+  background: var(--almost-black);
+  color: white;
+  font-family: inherit;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+.clients {
+  display: flex;
+  margin-top: 45px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 
 @media only screen and (min-width: 1200px) {

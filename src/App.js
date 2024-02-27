@@ -8,10 +8,10 @@ import ClientMeet from "./images/client-meet.svg";
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Nav />
       <img className="heroImg" src={HeroImg} alt="" />
-      <div>
+      <div className="content-container">
         <h1>Make Remote Work</h1>
         <p>
           Get your team in sync, no matter your location. Streamline processes,
@@ -19,13 +19,13 @@ function App() {
         </p>
         <button>Learn more</button>
         <div className="clients">
-          <img src={ClientDatabiz} alt="" />
-          <img src={ClientAudiophile} alt="" />
-          <img src={ClientMeet} alt="" />
-          <img src={ClientMaker} alt="" />
+          <img src={ClientDatabiz} width="80" height="15" alt="" />
+          <img src={ClientAudiophile} alt="" width="60" height="30" />
+          <img src={ClientMeet} alt="" width="65" height="15" />
+          <img src={ClientMaker} alt="" width="60" height="17" />
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 
